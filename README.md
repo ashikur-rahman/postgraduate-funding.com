@@ -1,175 +1,193 @@
 # Postgraduate Funding Platform (AGO CMS)
 
-A full-stack, subscription-based funding discovery platform built to
-power **The Alternative Guide to Postgraduate Funding Online (AGO)**
-used by postgraduate students across UK universities.
+A full-stack web platform developed to support **The Alternative Guide to Postgraduate Funding Online (AGO)** used by postgraduate students across UK universities.
 
-The platform enables students and universities to access funding
-databases, manage subscriptions, and search scholarship opportunities
-through a secure web system.
+The system enables students to discover **scholarships, grants, and charity-based funding opportunities**, while providing administrators with a **complete CMS dashboard for managing content, menus, users, and subscriptions**.
 
-This entire system --- including CMS, architecture, authentication
-system, subscription platform, and funding search engine --- was
-designed and implemented independently using **CodeIgniter 4, MySQL, and
-PayPal integration**.
+---
 
-------------------------------------------------------------------------
+# 🚀 Key Features
 
-# Core Engineering Highlights
+- Postgraduate funding discovery platform
+- Subscription-based access system
+- PayPal payment integration
+- CMS-driven navigation system
+- University-based authentication
+- PIN-based access system
+- IP-based institutional access
+- Admin analytics dashboard
+- Content management system
 
-• Full CMS platform built from scratch\
-• Multi-authentication system (Email / PIN / IP)\
-• Subscription lifecycle management\
-• Dynamic funding search engine\
-• Admin dashboard with analytics\
-• PayPal payment integration
+---
 
-------------------------------------------------------------------------
+# 🛠 Technology Stack
 
-# System Architecture
+Backend:
+- PHP
+- CodeIgniter Framework
+- MySQL
 
-Client Browser\
-→ Frontend UI (Bootstrap + jQuery + AJAX)\
-→ CodeIgniter 4 MVC Framework\
-→ Controllers / Models / Views\
-→ MySQL Database\
-→ External API Integrations (PayPal)
+Frontend:
+- HTML
+- JavaScript
+- jQuery
+- Bootstrap
 
-------------------------------------------------------------------------
+Integrations:
+- PayPal Payment Gateway
 
-# Key Modules
+---
 
-### Funding Search Engine
+# 📸 Platform Screenshots
 
-Multi-criteria scholarship discovery engine allowing users to filter
-funding opportunities by:
+The following screenshots demonstrate key features of the platform.
 
--   Age eligibility
--   Nationality
--   Subject area
--   Mode of study
--   Degree type
--   Location
--   Gender
--   Grant type
+---
 
-### Personal Grants Manager
+## Admin Dashboard
 
-Users can save funding opportunities with duplicate detection and
-personal tracking.
+The administration panel provides real-time analytics for the platform.
 
-### Subscription Management
+Features:
+- Total users
+- Active users
+- Total subscriptions
+- Active subscriptions
+- University subscriptions
+- Access type statistics
 
-Supports:
+![Admin Dashboard](screenshots/admin%20panel.png)
 
--   Multiple subscription plans
--   Duration-based pricing
--   PayPal integration
--   Automatic access control
+---
 
-### Institutional Access
+## CMS Menu Management
 
-Universities can provide access via:
+Administrators can dynamically manage the entire site navigation using a **CMS-based menu system**.
 
--   Registered IP ranges
--   Email domain authentication
--   Institutional PIN access
+Features:
+- Dynamic navigation
+- Nested menu structure
+- Menu visibility control
+- CMS-driven frontend navigation
 
-------------------------------------------------------------------------
-#System Architecture
+![CMS Menu Management](screenshots/CMS%20menus.png)
 
-       
-       <img width="684" height="612" alt="image" src="https://github.com/user-attachments/assets/cff48582-d632-4783-97e7-297ebf977cc0" />
+---
 
-------------------------------------------------------------------------
+## Website Navigation Menu
+
+The website navigation is dynamically generated from the CMS database using a **recursive menu rendering system**.
+
+Features:
+- Multi-level menus
+- Dynamic menu generation
+- Role-based access visibility
+- Clean frontend navigation
+
+![Website Navigation](screenshots/menu.png)
+
+---
+
+## Subscription Plans
+
+Users can subscribe to access the funding database.
+
+Available plans:
+
+- **3 Month Plan**
+- **12 Month Plan**
+
+Features:
+- PayPal payment processing
+- Coupon system
+- Automatic subscription activation
+- Secure checkout flow
+
+![Subscription Plans](screenshots/products.png)
+
+---
+
+# ⚙️ System Modules
+
+### Content Management
+- Content manager
+- Menu manager
+- Cover image management
+- Resource management
+- PDF mode management
+
+### User Management
+- User manager
+- Email access management
+- PIN access management
+- IP access management
+- University management
+
+### Subscription System
+- Plan management
+- PayPal integration
+- Subscription lifecycle
+- Coupon support
+
+### Analytics Dashboard
+- Active users monitoring
+- Subscription statistics
+- Institutional access tracking
+
+---
 
 
-# Admin CMS Modules
+### Controllers
+Application logic including:
 
--   Content Manager
--   Menu Manager
--   Cover Image Manager
--   Resource Manager
--   User Manager
--   Email Manager
--   PIN Manager
--   IP Manager
--   Subscription Manager
--   Tracker Management
+- Product subscriptions
+- Payment processing
+- User management workflows
 
-------------------------------------------------------------------------
+### Models
+Database interaction and business entities.
 
-# Database Core Tables
+### Libraries
+Custom integrations such as:
 
-users\
-products\
-subscribed_users\
-qtmso_cd\
-personal_grant_management\
-user_login_tracking\
-university_management\
-university_ip_management\
-save_funding_search
+- PayPal payment processing library
 
-------------------------------------------------------------------------
+### Views
+Frontend templates for:
 
-# Security Features
+- Dashboard
+- Navigation
+- Product subscription pages
 
-• Role-based access control\
-• Session authentication\
-• Campus IP verification\
-• Duplicate entry prevention\
-• Server-side validation
+---
 
-------------------------------------------------------------------------
+---
 
-# Performance Optimizations
+# 📦 Example Code Demonstrated
 
-• AJAX powered search results\
-• DataTables server-side processing\
-• Optimised database queries\
-• Modular MVC architecture
+This repository demonstrates:
 
-------------------------------------------------------------------------
+- Recursive menu generation
+- PayPal payment integration
+- Subscription lifecycle management
+- CMS-driven navigation
+- MVC architecture with CodeIgniter
 
-# DevOps Deployment
+---
 
-Typical deployment stack:
+# 📄 License
 
-Client\
-→ CDN / Cloudflare\
-→ Nginx\
-→ PHP-FPM\
-→ CodeIgniter Application\
-→ MySQL Database
+This repository is shared for **portfolio and demonstration purposes only**.  
+Production credentials and proprietary infrastructure have been removed.
 
-------------------------------------------------------------------------
+---
 
-# Installation
+# 👨‍💻 Author
 
-Clone repository
+**Md. Ashikur Rahman**
 
-git clone https://github.com/yourusername/postgraduate-funding-cms.git
+Senior Software Engineer  
 
-Install dependencies
+GitHub:  
+https://github.com/ashikur-rahman
 
-composer install
-
-Configure environment
-
-cp env .env
-
-Run server
-
-php spark serve
-
-------------------------------------------------------------------------
-
-# Author
-
-**Md. Ashikur Rahman**\
-Senior Software Engineer\
-Senior Officer (ICT), Agrani Bank Limited
-
-Specializations: - PHP (CodeIgniter / Laravel) - Java Spring Boot - REST
-API Engineering - Database Architecture - DevOps Engineering
