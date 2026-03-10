@@ -4,7 +4,7 @@ A full-stack web platform developed to support **The Alternative Guide to Postgr
 
 The system enables students to discover **scholarships, grants, and charity-based funding opportunities**, while providing administrators with a **complete CMS dashboard for managing content, menus, users, and subscriptions**.
 
-I have written all the codes and build a bery dynamic CMS with CodeIgnitor 4 and MySQL in 2021
+I have written all the codes and build a dynamic CMS with CodeIgnitor 4 and MySQL in 2021
 ---
 
 # 🚀 Key Features
